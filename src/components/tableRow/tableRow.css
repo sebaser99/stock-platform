@@ -1,0 +1,84 @@
+/* Contenedor principal */
+#usersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabecera de la tabla */
+#usersTable thead {
+    background-color: var(--secondary-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Filas del encabezado */
+#usersTable thead th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Filas del cuerpo de la tabla */
+#usersTable tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+/* Celdas del cuerpo de la tabla */
+#usersTable tbody td {
+    padding: 12px 15px;
+}
+
+/* Filas alternas para mejorar la legibilidad */
+#usersTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover sobre una fila */
+#usersTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Texto del mensaje cuando no hay movimientos */
+h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Tabla en pantallas pequeñas */
+@media (max-width: 768px) {
+    #usersTable {
+        font-size: 14px;
+    }
+
+    #usersTable thead {
+        display: none;
+    }
+
+    #usersTable tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #usersTable tbody td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    #usersTable tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

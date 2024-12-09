@@ -1,0 +1,20 @@
+.counter {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.counter button {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.counter p {
+    height: 30px;
+    margin: 0;
+    margin:  5px;
+    color: #2c3e50;
+    font-weight: bold;
+}

@@ -1,0 +1,14 @@
+.funds-nav {
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #f7f7f7;
+    color: black;
+    min-height: 10vh;
+}
+
+.funds-nav  p {
+    margin: 5px;
+}
+
