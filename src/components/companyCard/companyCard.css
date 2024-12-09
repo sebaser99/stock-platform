@@ -7,6 +7,7 @@
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     color: #333;
+    margin: 10px;
 }
 
 /* Cabecera de la tarjeta */
