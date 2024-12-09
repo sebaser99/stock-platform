@@ -4,7 +4,8 @@ import { Companies } from "../../components/companies/Companies";
 import { AppContext } from "../../context/contextProvider";
 import { Company } from "../../interfaces/Company";
 import { stock } from "../../data/stock";
-import { Layout } from "../../layout/layout";
+import { LayoutComponent } from "../../layout/LayoutComponent";
+
 
 export default function Home(){
     useEffect(() => {
@@ -33,9 +34,9 @@ export default function Home(){
   const {companiesSearched, setCompanies, setCompaniesSearched} = useContext(AppContext)
   
   return (
-    <Layout>
+    <LayoutComponent>
         <h4 className='container-percent'>Compra acciones de las empresas más rentables del mundo. Mira en tiempo real cómo cambia su stock y comportamiento</h4>
         <Companies companies={companiesSearched} />
-    </Layout>
+    </LayoutComponent>
   )
 }

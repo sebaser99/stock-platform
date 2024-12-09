@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { Layout } from "../../layout/layout";
+import { LayoutComponent } from "../../layout/LayoutComponent";
 import './mySotcks.css';
 import { AppContext } from "../../context/contextProvider";
 import { StockCard } from "../../components/stockCard/StockCard";
@@ -19,7 +19,7 @@ export const MyStocks = () => {
   
   const {actionsBought, setActionsBought } = useContext(AppContext);
   return (
-    <Layout>
+    <LayoutComponent>
       <h4 className='container-percent'>Acciones adquiridas.</h4>
       <div className='container myStocks'>
         {
@@ -35,6 +35,6 @@ export const MyStocks = () => {
           </div>
         }
       </div>
-    </Layout>
+    </LayoutComponent>
   )
 }

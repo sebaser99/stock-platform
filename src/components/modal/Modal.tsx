@@ -1,4 +1,3 @@
-import { useState } from "react";
 import './modal.css';
 
 export interface Props {

@@ -2,7 +2,7 @@ import { Modal } from "../../components/modal/Modal";
 import { RechargeFunds } from "../../components/rechargeFunds/RechargeFunds";
 import { TableRow } from "../../components/tableRow/TableRow";
 import { AppContext } from "../../context/contextProvider";
-import { Layout } from "../../layout/layout";
+import { LayoutComponent } from "../../layout/LayoutComponent";
 import './myFunds.css';
 import '../../components/tableRow/tableRow.css';  
 import { useContext, useState } from 'react';
@@ -21,7 +21,7 @@ export const MyFunds = () => {
       currency: "USD", // Cambia "COP" por la moneda que necesites (USD, EUR, etc.)
     }).format(funds.total);
   return (
-    <Layout>
+    <LayoutComponent>
       <h4 style={{marginTop: '40px', marginBottom: '20px  '}} className='container-percent'>Aumenta los fondos de tu cuenta, consulta tu saldo y los gastos realizados en compras de acciones.</h4>
       <div className='container'>
         <div className='funds-nav'>
@@ -57,6 +57,6 @@ export const MyFunds = () => {
       <Modal isOpen={modal} onClose={changeModal} children={
         <RechargeFunds onClose={changeModal} />
       } />
-    </Layout>
+    </LayoutComponent>
   )
 }

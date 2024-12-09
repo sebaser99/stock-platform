@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { Context } from "../interfaces/Context";
 import { Company } from "../interfaces/Company";
 import { Funds } from "../interfaces/Funds";
@@ -41,7 +41,7 @@ export const AppContext = createContext<Context>({
     setMovements: ()=>{},
     setActionsBought: ()=>{},
     setFunds: ()=> {},
-    search: (query:string, path: string)=> {},
+    search: ()=> {},
     setCompanies: ()=>{},
     setCompaniesSearched: ()=>{},
     buyActions: ()=> {},
