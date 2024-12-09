@@ -39,7 +39,7 @@ export default function Home(){
         {
           companiesSearched.length > 0 ? 
             <Companies companies={companiesSearched} />
-          : <h2 style={{color: 'white'}}>No existe esa compañia</h2>
+          : <h2 className="container" style={{color: 'white', textAlign: 'center', margin: '10px'}}>No existe esa compañia</h2>
         }
         
     </LayoutComponent>
