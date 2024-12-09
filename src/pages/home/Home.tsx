@@ -36,7 +36,12 @@ export default function Home(){
   return (
     <LayoutComponent>
         <h4 className='container-percent'>Compra acciones de las empresas más rentables del mundo. Mira en tiempo real cómo cambia su stock y comportamiento</h4>
-        <Companies companies={companiesSearched} />
+        {
+          companiesSearched.length > 0 ? 
+            <Companies companies={companiesSearched} />
+          : <h2 style={{color: 'white'}}>No existe esa compañia</h2>
+        }
+        
     </LayoutComponent>
   )
 }
